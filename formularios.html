@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!--atributo action hace referncia al documento o a la url donde 
+            queremos enviar: en este caso lo mandamos a resultados y se ven en
+        la url  -->
+        <form action='resultados.html' method="GET">
+            <div>
+                <!--label es una etiqueta que caundo se selecciona el nombre
+                de ususario se selecciona el input(campo de texto donde se pone 
+                informacion)-->
+            <label for="nombreusuario">Nombre de Usuario</label>
+            <input type="text" name="nombreusuario" id="nombreusuario" required/>
+            </div>
+            <br>
+           <!--En action se envian el nombre y la contraseña creada con el metodo get sin 
+        que espere ninguna accion-->
+        <!--tamnien exiten los 
+            type=email
+        type=number con min='0' max='20' step='5' aumenta de 5 en 5
+    type='date' => fechas-->
+            <label for="password">Contraseña</label>
+            <input type='password' name="password"  id="password"  required/>
+            <div>
+                <br>
+            <!--para crear un cuadro de comentarios-->
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario"></textarea>
+            </div>
+            <!--boton para resetear-->
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
